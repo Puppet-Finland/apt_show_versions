@@ -8,7 +8,7 @@ class apt_show_versions {
     # On non-Debian platforms this class makes little sense and could cause 
     # puppet run failures.
     #
-    if $::osfamily == "Debian" {
-        include apt_show_versions::install
+    if $::osfamily == 'Debian' {
+        include ::apt_show_versions::install
     }
 }
